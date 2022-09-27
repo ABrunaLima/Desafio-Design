@@ -1,9 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import { Menu } from './menuBar'
+import {Dash} from './paginas/dashboard'
+import { Listas } from './paginas/listagem';
 
 
-function App() {
+
+export function App() {
 /*
   const [pagina, setPagina] = useState(0)
   const [nome, setNome] = useState("")
@@ -30,6 +33,8 @@ function App() {
   return (
     <div className="App">
       <Menu />
+      <Dash />
+      <Listas />
     </div>
   );
 }
