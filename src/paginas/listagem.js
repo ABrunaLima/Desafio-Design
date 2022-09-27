@@ -1,4 +1,5 @@
-import { Menu } from '/menuBar'
+import '../styles.css'
+
 const arr = [
                     {nome: 'Susana', estado: 'Empregado'},
                     {nome: 'Renato', estado: 'Desempregado'},
@@ -12,19 +13,15 @@ const arr = [
                 ]
 
 export function Listas(){
-    return (
-    
-        <div className='container'>
-            
+    return (                  
             <div>             
                 {arr.map((e) => (
-                    <div key={`${e.nome} ${e.estado}`}>
-                    <span>{e.nome}</span>
-                    <span>{e.estado}</span>
-                </div>)
-                )
+                    <div className="listas" key={`${e.nome} ${e.estado}`}>
+                    <span className="nomesListas">{e.nome}</span>
+                    <span className="nomesEstados">{e.estado}</span>
+                    </div>
+                ))
                 }
             </div>
-        </div>
     )
 }

@@ -33,7 +33,6 @@ export function App() {
   return (
     <div className="App">
       <Menu />
-      <Dash />
       <Listas />
     </div>
   );

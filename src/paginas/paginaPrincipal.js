@@ -1,4 +1,3 @@
-import { Menu } from '/menuBar'
 
 export function PaginaPrincipal(){
     return(

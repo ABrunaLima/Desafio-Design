@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
 
 .container{
     background-color: white;
@@ -33,4 +32,26 @@
 .menu img{
     max-width: 200px;
     max-height: 200px;
+}
+.listas{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 1100px;
+    border-style: solid;
+    border-color: var(--roxo);
+    border-width: 2px;
+
+
+}
+.nomeListas{
+    background-color: transparent;
+    gap: 50px
+
+}
+
+
+.nomeEstados{
+    background-color: transparent;
+
 }

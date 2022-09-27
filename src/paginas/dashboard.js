@@ -1,4 +1,4 @@
-import { Menu } from './menuBar'
+
 import { ResponsiveBar } from '@nivo/bar'
 
 export function Dash(){
@@ -19,8 +19,7 @@ export function Dash(){
     }]
     return (
     
-        <div className='container'>
-            
+                   
             <div className='gráfico'>
                 <ResponsiveBar
                     data={data}
@@ -138,8 +137,7 @@ export function Dash(){
                     ariaLabel="Nivo bar chart demo"
                     barAriaLabel={function(e){return e.id+": "+e.formattedValue+" in country: "+e.indexValue}}
                 />
-)
+                
             </div>
-        </div>
     )
 }
