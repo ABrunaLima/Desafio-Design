@@ -1,4 +1,5 @@
 import '../styles.css'
+import { Filtro } from '../filtros'
 
 const arr = [
                     {nome: 'Susana', estado: 'Empregado'},
@@ -7,14 +8,16 @@ const arr = [
                     {nome: 'Fernanda', estado: 'Empregado'},
                     {nome: 'Roberto', estado: 'Desempregado'},
                     {nome: 'Renato', estado: 'Desempregado'},
-                    {nome: 'Renato', estado: 'Empregado'},
-                    {nome: 'Renato', estado: 'Desempregado'},
+                    {nome: 'Rita', estado: 'Empregado'},
+                    {nome: 'Gabriel', estado: 'Desempregado'},
 
                 ]
 
 export function Listas(){
     return (                  
-            <div>             
+            <div className='listaContainer' >
+                <div><Filtro/></div>
+                <div>             
                 {arr.map((e) => (
                     <div className="listas" key={`${e.nome} ${e.estado}`}>
                     <span className="nomesListas">{e.nome}</span>
@@ -22,6 +25,7 @@ export function Listas(){
                     </div>
                 ))
                 }
+                </div>
             </div>
     )
 }

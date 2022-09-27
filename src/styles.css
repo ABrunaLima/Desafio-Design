@@ -33,20 +33,28 @@
     max-width: 200px;
     max-height: 200px;
 }
+.listaContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
 .listas{
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    width: 80vw;
     display: flex;
     flex-direction: row;
-    gap: 1100px;
+    gap: 65vw;
     border-style: solid;
     border-color: var(--roxo);
     border-width: 2px;
-
-
+    padding: 20px;
+    
+    
 }
 .nomeListas{
     background-color: transparent;
-    gap: 50px
+    
 
 }
 
