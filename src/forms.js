@@ -19,11 +19,11 @@ function MyForm() {
 
 
 
+***********
 
-  
-  */
+MULTIPLE INPUT FIELDS
 
-  import { useState } from 'react';
+import { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 
 function MyForm() {
@@ -45,7 +45,7 @@ function MyForm() {
       <label>Enter your name:
       <input 
         type="text" 
-        name="username" 
+        name="username"     
         value={inputs.username || ""} 
         onChange={handleChange}
       />
@@ -65,4 +65,14 @@ function MyForm() {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<MyForm />);
+
+************
+
+
+
+
+  
+  */
+
+  
 
