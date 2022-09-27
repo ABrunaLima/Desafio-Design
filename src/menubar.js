@@ -1,11 +1,16 @@
+import './styles.css'
 
-function Menu(){
+export function Menu(){
     return(
-        <div>
-            <button onClick={}>Home</button>
-            <button onClick={}>Candidaturas</button>
-            <button onClick={}>Aprendizes</button>
-            <button onClick={}>Empregabilidade</button>
+    <div className='container'>
+        <div className="menu">
+            <img src="/images/Logo.svg"/>
+            <button className="menuButton">Home</button>
+            <button className="menuButton">Candidaturas</button>
+            <button className="menuButton">Aprendizes</button>
+            <button className="menuButton">Empregabilidade</button>
         </div>
+    </div>
     )
 }
+
